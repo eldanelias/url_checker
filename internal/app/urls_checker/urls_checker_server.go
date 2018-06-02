@@ -74,7 +74,7 @@ func serializeToJSON(resBody UrlResponseBody) []byte {
 }
 
 func responseFor(reqBody *UrlRequestBody) UrlResponseBody {
-	url 		 := reqBody.Domain + reqBody.Path
+	url      := reqBody.Domain + reqBody.Path
 	exists 	 := urlsChecker.Exists(url)
 	location := (map[bool]string{true: url, false: ""})[exists]
 
