@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "35d4537b-4e0d-485a-9ab1-6cfae94e03fd",
+		"name": "check urls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "check url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"domain\": \"https://play.golang.org\",\n\t\"path\": \"/p/ZgLwC_DHm0\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/check_url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"check_url"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
