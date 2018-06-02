@@ -27,7 +27,7 @@ func StartServer() {
 func checkURL(writer http.ResponseWriter, req *http.Request) {
 	defer catchErrors(writer)
 
-	bodyBytes 	 := getBodyBytes(req)
+	bodyBytes    := getBodyBytes(req)
 
 	reqBody      := deserializeRequestBody(bodyBytes)
 
